@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmers Resources Hub</title>
+<style>
+body {
+font-family: 'Arial', sans-serif;
+background-color: #eaf6e1;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+header {
+background-color: #2c3e50;
+color: white;
+padding: 20px 0;
+text-align: center;
+font-size: 2em;
+position: relative;
+overflow: hidden;
+}
+nav {
+background-color: #34495e;
+padding: 10px 0;
+text-align: center;
+}
+nav a {
+color: white;
+text-decoration: none;
+padding: 12px 20px;
+font-size: 18px;
+margin: 0 15px;
+text-transform: uppercase;
+}
+nav a:hover {
+background-color: #1abc9c;
+border-radius: 5px;
+}
+.tabs-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 20px;
+}
+.tab {
+background-color: #34495e;
+color: white;
+padding: 20px;
+margin: 15px;
+width: 30%;
+box-sizing: border-box;
+border-radius: 8px;
+transition: background-color 0.3s;
+}
+.tab:hover {
+background-color: #1abc9c;
+}
+.tab h3 {
+margin-top: 0;
+font-size: 1.5em;
+}
+.tab-content {
+margin-top: 20px;
+font-size: 1em;
+}
+.content {
+display: none;
+}
+iframe {
+width: 100%;
+height: 400px;
+border: none;
+border-radius: 8px;
+}
+audio {
+margin: 20px 0;
+width: 100%;
+border-radius: 8px;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+table, th, td {
+border: 1px solid #ddd;
+}
+th, td {
+padding: 10px;
+text-align: left;
+}
+th {
+background-color: #2c3e50;
+color: white;
+}
+ul {
+padding: 0;
+list-style-type: none;
+}
+ul li {
+background-color: #ecf0f1;
+margin: 5px 0;
+padding: 10px;
+border-radius: 5px;
+}
+footer {
+background-color: #34495e;
+color: white;
+padding: 20px;
+text-align: center;
+font-size: 1em;
+position: relative;
+bottom: 0;
+width: 100%;
+box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Farmers Resources Hub</h1>
+</header>
+<nav>
+<a href="javascript:void(0)" onclick="showTab('tab1')">Welcome</a>
+<a href="javascript:void(0)" onclick="showTab('tab2')">Farming Tips</a>
+<a href="javascript:void(0)" onclick="showTab('tab3')">Planting Guide</a>
+<a href="javascript:void(0)" onclick="showTab('tab4')">Farm Data</a>
+<a href="javascript:void(0)" onclick="showTab('tab5')">Market Trends</a>
+<a href="javascript:void(0)" onclick="showTab('tab6')">Contact Us</a>
+</nav>
+<div class="tabs-container">
+<div class="tab" id="tab1">
+<h3>Welcome to Farmers Resources Hub</h3>
+<div class="tab-content">
+<p>Welcome to our website, designed to provide resources and helpful information for
+farmers. Explore various farming techniques, crop guides, and market trends to improve
+your farming practices.</p>
+<h4>Listen to our Resourceful Audio</h4>
+<audio controls>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+</div>
+</div>
+<div class="tab" id="tab2">
+<h3>Farming Tips</h3>
+<div class="tab-content">
+<ul>
+<li>Watering Techniques for Different Crops</li>
+<li>Best Soil for High-Yield Crops</li>
+<li>How to Use Fertilizers Effectively</li>
+</ul>
+</div>
+</div>
+<div class="tab" id="tab3">
+<h3>Planting Guide</h3>
+<div class="tab-content">
+<ul>
+<li>Corn: Best Time to Plant and Care Tips</li>
+<li>Wheat: Growing Stages and Soil Requirements</li>
+<li>Rice: Flooding and Drainage Techniques</li>
+</ul>
+</div>
+</div>
+<div class="tab" id="tab4">
+<h3>Farm Data</h3>
+<div class="tab-content">
+<table>
+<thead>
+<tr>
+<th>Crop</th>
+<th>Yield (kg/ha)</th>
+<th>Region</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Corn</td>
+<td>8000</td>
+<td>Midwest</td>
+</tr>
+<tr>
+<td>Wheat</td>
+<td>6000</td>
+<td>Great Plains</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tab" id="tab5">
+<h3>Market Trends</h3>
+<div class="tab-content">
+<ul>
+<li>Trends in Global Corn Prices</li>
+<li>Impact of Weather on Wheat Market</li>
+<li>Global Demand for Organic Produce</li>
+</ul>
+</div>
+</div>
+<div class="tab" id="tab6">
+<h3>Contact Us</h3>
+<div class="tab-content">
+<p>If you have any inquiries or need further information, don't hesitate to reach out to
+us at <a href="mailto:info@farmersresources.com">info@farmersresources.com</a>.</p>
+</div>
+</div>
+</div>
+<section class="media-section">
+<h2>Learn How to Start a Successful Farming Business</h2>
+<iframe src="https://www.youtube.com/embed/OVHE5k89sWQ"
+allowfullscreen></iframe>
+</section>
+<footer>
+<p>Contact us at <a href="mailto:info@farmersresources.com" style="color:
+white;">info@farmersresources.com</a></p>
+<p>&copy; 2025 Farmers Resources Hub. All rights reserved.</p>
+</footer>
+<script>
+function showTab(tabId) {
+const tabs = document.querySelectorAll('.tab');
+tabs.forEach(tab => tab.style.display = 'none');
+document.getElementById(tabId).style.display = 'block';
+}
+document.getElementById('tab1').style.display = 'block';
+</script>
+</body>
+</html>
